@@ -63,3 +63,41 @@ Qt::NoToolBarArea
 
 例:
 `addMenuBar(Qt::LeftToolMenuBar,toolbar);`
+## 设置浮动
+
+`toolBar->setMovable(false);`
+## 工具栏设置内容
+
+`toolBar->addAction("文本");`
+
+# 状态栏设置(需头文件)
+
+`QStatusBar * sBar = StatusBar();`
+
+## 放窗口中
+
+`setStatusBar(stBar);`
+
+# 放标签控件(需头文件)
+```
+QLabel * label = new QLabel("提示信息",this);
+stBar->addWidget(label);
+```
+# 停靠窗口
+```
+QDockWidget * dwidget = new QDockWidget();
+addDockWidget(Qt::BottomDockWidgetArea,dwidget);
+```
+#编辑窗口
+```
+QTextEdit * edit = new QTextEdit();
+setCentralWidget(edit);
+```
+
+#小总结
+
+在窗口中安放组件时
+
+只能创建一个的用set
+
+能创建多个的用add
