@@ -1,5 +1,5 @@
 # QtMenuNote
-# QMainWindow
+# QMainWindow中的状态栏，铆接部件，核心部件
 
 # 菜单栏
 
